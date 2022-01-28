@@ -52,8 +52,7 @@ class Detector:
 
     def load_model(self):
         tf.keras.backend.clear_session()
-        self.model = tf.saved_model.load(os.path.join(
-            self.cache_dir, "checkpoints", self.model_name, "saved_model"))
+        self.model = tf.saved_model.load(os.path.join(self.cache_dir, "checkpoints", self.model_name, "saved_model"))
 
     def create_bbox(self, image, conf_treshold=0.5, overlay_treshold=0.5):
         input_tensor = cv2.cvtColor(image.copy(), cv2.COLOR_BGR2RGB)
