@@ -22,7 +22,7 @@ class VideoCapture:
                 break
             if not self.q.empty():
                 try:
-                    self.q.get_nowait()   # discard previous (unprocessed) frame
+                    self.q.get_nowait()  # discard previous (unprocessed) frame
                 except queue.Empty:
                     pass
             self.q.put(frame)
@@ -47,9 +47,9 @@ def frame_generator(capture: cv2.VideoCapture, log_fps: bool = False):
 
         yield capture.read()[1]
 
-        timeDiff = time.time() - now
-        if (timeDiff < 1.0/(fps)):
-            time.sleep(1.0/(fps) - timeDiff)
+        time_diff = time.time() - now
+        if (time_diff < 1.0/(fps)):
+            time.sleep(1.0/(fps) - time_diff)
 
 
 def main():
