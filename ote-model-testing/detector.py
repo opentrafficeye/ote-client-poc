@@ -1,5 +1,6 @@
 import os
 import time
+from typing import Optional
 
 import cv2
 import numpy as np
@@ -9,10 +10,11 @@ from tensorflow.python.keras.utils.data_utils import get_file
 np.random.seed(420)
 
 
-def frame_generator(capture: cv2.VideoCapture, log_fps: bool = False):
+def frame_generator(capture: cv2.VideoCapture, fps: Optional[int] = None,
+                    log_fps: bool = False):
     frames_passed = 0
     last_time = time.time() - 1e-5
-    fps = capture.get(cv2.CAP_PROP_FPS)
+    fps = fps or capture.get(cv2.CAP_PROP_FPS)
 
     while(True):
         now = time.time()
@@ -114,7 +116,7 @@ class Detector:
         if (video_cap.isOpened() is False):
             print('Error opening file...')
             return
-        for frame in frame_generator(video_cap, log_fps=True):
+        for frame in frame_generator(video_cap, fps=5, log_fps=True):
             bbox_image = self.create_bbox(
                 frame, conf_treshold, overlay_treshold)
             cv2.imshow('Result', bbox_image)
