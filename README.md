@@ -4,6 +4,8 @@ This proof of concept app was developed for the hackathon "SMART WITH DATA", org
 
 The whole machine learning algorithm would be executed in the mobile device and the conclusions would then be sent to a certain backend service which will further aggregate informations from different places and compile a final conclusion for the congestion in the streets.
 
+Made by Tomislav Ignjatov and Martin Popovski
+
 Models used for the object detection are from the [Tensorflow COCO2017 Model Zoo](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/tf2_detection_zoo.md):
 
 ## [SSD MobileNet V2](http://download.tensorflow.org/models/object_detection/tf2/20200711/ssd_mobilenet_v2_320x320_coco17_tpu-8.tar.gz)
