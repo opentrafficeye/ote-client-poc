@@ -1,6 +1,6 @@
 # Open Trafic Eye (Proof of concept)
 
-This proof of concept app was developed for the hackathon "SMART WITH DATA", organized within the activities of the National Center HPC.mk for competencies for HPC, HPDA and AI of the Republic of North Macedonia. In which it managed to be awarded second place. The fundamental idea behind this project is that people would put their mobile phones on their windows and they would be able to analyze number of cars in the street and make conclusions of the congestion rate of that area.
+This proof of concept app was developed for the hackathon "SMART WITH DATA", organized within the activities of the National Center HPC.mk for competencies for HPC, HPDA and AI of the Republic of North Macedonia, in which it managed to be awarded second place. The fundamental idea behind this project is that people put their mobile devices on their windows which would be able to analyze the number of vehicles in the street and make conclusions of the congestion rate of that area.
 
 The whole machine learning algorithm would be executed in the mobile device and the conclusions would then be sent to a certain backend service which will further aggregate informations from different places and compile a final conclusion for the congestion in the streets.
 
