@@ -23,5 +23,11 @@ Mean Average Precision: 34.3%
 
 Relative Speed: 46ms
 
+## Images from the models performance:
+
+![Paytool Petrovec](https://github.com/opentrafficeye/ote-client-poc/blob/main/petrovec_patarina.png)
+![Paytool Petrovec 2](https://github.com/opentrafficeye/ote-client-poc/blob/main/petrovec_patarina_pt2.png)
+![Paytool Tetovo](https://github.com/opentrafficeye/ote-client-poc/blob/main/tetovo_patarina.png)
+
 
 
